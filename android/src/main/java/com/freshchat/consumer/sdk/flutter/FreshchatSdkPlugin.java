@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.util.Log;
 import android.content.BroadcastReceiver;
 
-import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 
 import android.content.IntentFilter;
 import android.content.Intent;
