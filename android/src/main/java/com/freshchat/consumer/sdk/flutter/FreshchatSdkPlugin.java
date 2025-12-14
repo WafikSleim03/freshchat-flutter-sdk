@@ -547,7 +547,7 @@ public class FreshchatSdkPlugin implements FlutterPlugin, MethodCallHandler {
 
     public void dismissFreshchatView() {
         Intent dismissIntent = new Intent("com.freshchat.consumer.sdk.actions.DismissFreshchatScreens");
-		LocalBroadcastManager.getInstance(context).sendBroadcast(dismissIntent);
+        context.sendBroadcast(dismissIntent);
     } 
 
     @Override
