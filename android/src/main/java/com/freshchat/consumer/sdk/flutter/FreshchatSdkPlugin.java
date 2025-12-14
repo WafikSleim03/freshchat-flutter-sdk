@@ -352,11 +352,11 @@ public class FreshchatSdkPlugin implements FlutterPlugin, MethodCallHandler {
     private void registerBroadcastReceiver(@NonNull final FreshchatSDKBroadcastReceiver receiver, @NonNull final String action) {
         IntentFilter intentFilter = new IntentFilter();
         intentFilter.addAction(action);
-        LocalBroadcastManager.getInstance(context).registerReceiver(receiver, intentFilter);
+        context.registerReceiver(receiver, intentFilter);
     }
 
     private void unregisterBroadcastReceiver(@NonNull FreshchatSDKBroadcastReceiver receiver) {
-        LocalBroadcastManager.getInstance(context).unregisterReceiver(receiver);
+        context.unregisterReceiver(receiver);
     }
 
     private LinkHandler linkHandler = new LinkHandler() {
